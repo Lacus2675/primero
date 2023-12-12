@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/listado.css">
+    <title>Placas de video</title>
+</head>
+
+<body>
+
+    <header>
+    <br>  
+        <h1>Placas de video</h1>
+        
+        <nav class="principal">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href = "/products/create">Nuevo Producto</a></li>                
+            </ul>
+        </nav>
+        
+    </header>
+      
+ <main>
+    
+    <% products.forEach(function (product){ %>
+        
+        <div class="product-container">
+            
+            <a href = "/products/<%=product.id%>">Ver producto</a>
+                    
+            <img src=/img/<%= product.ima %>>
+    
+            <h2> <%= product.marca %></h2>
+            <p> <%= product.modelo %> </p>
+            <p class="precio">Precio : <%= product.precio %> </p>
+             
+        </div>
+    <% }) %>
+    
+ </main>
+ 
+    <footer>
+          
+        <p>Contactános<p>                
+        <p> Direccion San Martin 2052 Local 55</p> 
+        <p> Atencion al cliente : 8585-8585</p> 
+        <p> Telegram: 1154585452</p> 
+     
+    </footer>
+    
+</body>
+
+</html>

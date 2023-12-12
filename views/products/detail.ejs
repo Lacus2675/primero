@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/Form.css">
+        <title>Producto a Editar</title>
+</head>
+
+<body>
+        
+    <header>
+        <br><br><br>
+        <h1>Detalle de producto</h1>
+        
+        <nav class="principal">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href = "/products/create">Nuevo Producto</a></li>                
+            </ul>
+        </nav>
+        
+    </header>
+
+    <br><br>
+
+    
+    <main>
+        
+        <div class="product-container">
+            
+              <img src=/img/<%= product.ima %>>
+               
+        </div>
+
+         <div class="product-container"> 
+             
+            <p>
+                Marca: <%=product.marca%>
+            </p>
+
+            <p>
+                Modelo: <%=product.precio%>
+            </p>
+
+            <p class = "precio">
+                Precio: <%=product.precio%>
+            </p>
+               
+        <br>
+        <a href = "/products/<%=product.id%>/edit"><button class = "boton">Editar Producto</button></a>        
+        <a href = "/"><button class = "boton">Volver a inicio</button></a>
+                
+        <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+           <button class="botonBorrar" type="submit">Eliminar producto</button>
+       </form>
+       
+     </div>                      
+       
+    </main>
+
+    <br><br>
+    <br>
+
+    <footer>
+          
+        <p>Contactános<p>                
+        <p> Direccion San Martin 2052 Local 55</p> 
+        <p> Atencion al cliente : 8585-8585</p> 
+        <p> Telegram: 1154585452</p> 
+     
+    </footer>
+ 
+</body>
+</html>

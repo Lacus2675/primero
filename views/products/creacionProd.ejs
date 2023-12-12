@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/Menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/Form.css">
+    
+
+    <title>Agregar producto</title>
+</head>
+<body>
+    
+    <header>
+        <br><br>
+        <h1>Agregar producto</h1>
+        
+        <nav class="principal">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href = "/products/create">Nuevo Producto</a></li>                
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <br><br><br>
+
+    <main>
+    
+        <div class="product-container">
+            
+            <img src=/img/nuevo.jpg>
+            
+                 
+       </div>
+
+    <div class="product-container">
+        
+        
+        
+        <form action = "/products/" method="POST" enctype="multipart/form-data">
+            <div >
+                <br>
+                <div >
+                <label for="ima">Imagen</label><br>
+                <input placeholder = "placa.jpg" type="text" id="ima" name="ima" value="placa.jpg">
+             </div>        
+             
+             <br>
+             <div>
+                <label for="marca">Marca</label><br>
+                <input type="text" id="marca" name="marca">
+            </div> 
+            
+            <br>
+            <div>
+                <label for="modelo">Modelo</label><br>
+                <input type="text" id="modelo" name="modelo">
+            </div>
+           
+            <br>
+            <div>
+                <label for="precio">Precio</label><br>
+                <input type="text" id="precio" name="precio">
+            </div>
+            
+            <br>      
+            <div>
+                <div>
+                    <button type="submit" class="boton">Guardar producto</button>
+                </div> 
+            <div><br>
+                    <a href = "/"><button class = "boton">Regresar</button></a>
+        </div>
+    </div> 
+
+</div>
+
+</main>
+
+<br><br><br>
+    
+<footer>
+          
+    <p>Contactános<p>                
+    <p> Direccion San Martin 2052 Local 55</p> 
+    <p> Atencion al cliente : 8585-8585</p> 
+    <p> Telegram: 1154585452</p> 
+ 
+</footer>
+
+</body>
+</html>
